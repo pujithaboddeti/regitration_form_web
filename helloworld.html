@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding-top: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 2px;
+            background-color: white;
+            min-height: 100vh;
+        }
+        #head{
+            font-weight: 350px;
+            color: rgb(65, 65, 170);
+            font-size: x-large;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .image{
+            height: 90px;
+            width: 100%;
+        }
+        .container{
+            background-color: rgb(246, 240, 245);
+            border-radius: 8px;
+            max-width: 400px;
+            width: 80%;
+
+            padding: 9px;
+            word-spacing: 2px;
+            box-shadow: 0 4px 8px rgba(83, 79, 66, 0.1);
+            overflow: hidden;
+        }
+        .fgrp{
+            letter-spacing: 1px;
+            font-size: large;
+            font-family:'Times New Roman', Times, serif;
+            font: bold;
+            padding: 8px;
+        }
+        input,select{
+            width: 100%;
+            padding: 7px;
+            border-radius: 10px;
+            border: 0cap;
+            ;
+        }
+        .button,.reset{
+            background-color: rgb(161, 161, 174);
+            margin: 10px;
+            width: 100px;
+            transition: background-color 0.4s;
+        }
+        .button:hover,.reset:hover{
+            background-color: rgb(155, 105, 72);
+            color: azure;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="image" src="https://img.freepik.com/free-vector/matrix-style-binary-code-digital-falling-numbers-blue-background_1017-37387.jpg" alt="image for top">
+        <div class="content">
+            <h2 id="head">
+                campus Registration from aditya university
+            </h2>
+            <div class="form">
+                <form method="POST" action="helloworld.php">
+                    <div class="fgrp">
+                    <label>Candidate's First Name(As per Aadhar)<spam class='star'>*</spam></label>
+                    <input type="text" name="fname" placeholder="enter first name" required><br>
+                    </div>
+                    <div class="fgrp">
+                    <label>Candidate's Last Name(As per Aadhar) *</label>
+                    <input type="text" name="lname" placeholder="enter last name" required><br>
+                    </div>
+                    <div class="fgrp">
+                    <label>Candidate's SUC'id*</label>
+                    <input type="number" name="sucid" placeholder="enter suc id" required><br>
+                    </div>
+                    <div class="fgrp">
+                    <label for="campus">Candidate's Campus *</label>
+                    <select name="campus" required>
+                        <option value="6">cmapus location</option>
+                        <option value="1">aditya asilmetta</option>
+                        <option value="2">aditya gajuwaka</option>
+                        <option value="3">aditya ramnagar</option>
+                        <option value="4">aditya dabagardance</option>
+                        <option value="5">aditya kakinada</option>
+                    </select><br>
+                    </div>
+                    <div class="fgrp">
+                    <label for="contact-number">Candidate's cantact number*</label>
+                    <input type="number" name="mnum" placeholder="mobile number" required><br>
+                    </div>
+                    <div class="fgrp">
+                    <label for="email">enter your email address*</label>
+                    <input type="email" name="email" placeholder="enter mail" required><br>
+                    </div>
+                    <div class="fgrp">
+                    <label for="campus">Candidate's Country Residence *</label>
+                    <select name="country" id="s1" required>
+                        <option value="6">select country</option>
+                        <option value="1">India</option>
+                        <option value="2">China</option>
+                        <option value="3">USA</option>
+                        <option value="4">europe</option>
+                        <option value="5">brazil</option>
+
+                    </select><br>
+                    </div>
+                    <div class="fgrp">
+                    <label for="state">Candidate's Location State<spam class='star'> *</spam></label>
+                    <select name="cloc" required>
+                        <option value="6">select location</option>
+                        <option value="1">Andhra Pradesh</option>
+                        <option value="2">Utharkand</option>
+                        <option value="3">Madhyapradesh</option>
+                        <option value="4">Telangana</option>
+                        <option value="5">kakinada</option>
+
+                    </select><br>
+                    </div>
+                    <div class="fgrp">
+                    <label for="campus">Candidate's city</label>
+                    <input type="text" name="city" placeholder="enter city" required><br>
+                    </div>
+                    <div class="fgrp">
+                    <label for="degree">Graduation Degree Name*</label>
+                    <input type="text" name="degree" placeholder="enter degree course" required><br>
+                    </div>
+                    <div class="fgrp">
+                    <label for="skills">skills*</label>
+                    <select name="skills" required>
+                        <option value="6">select skills</option>
+                        <option value="1">Java</option>
+                        <option value="2">AWS cloud</option>
+                        <option value="3">Python</option>
+                        <option value="4">web Development</option>
+                        <option value="5">BootStrap</option>
+
+                    </select><br>
+                    <div class="buttons">
+                    <input type="submit" class="button" name="submit">
+                
+                    <input type="reset" class="reset" name="cancel">
+                    </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
